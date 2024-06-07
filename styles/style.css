@@ -1,5 +1,253 @@
-h1 {
-  color: red;
-  font-size: 50px;
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1f1;
+}
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  gap: 20px;
+
+}
+
+
+.left h1{
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #591ce6;
+  margin-bottom: 20px;
+}
+.left p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+
+}
+.left .button{
+  width:100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.left .button button{
+  font-size: 1.2rem;
+  width: fit-content;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #591ce6;
+}
+.left .button .btn{
+  background-color: #591ce6;
+  padding: 15px 25px;
+}
+.left .button .learn{
+  background-color: transparent;
+  padding: 15px 25px;
+  color: #333;
+
+}
+
+.right{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-top: 10px;
+
+}
+.right img{
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #591ce6;
+  z-index: 1000;
+  position: fixed;
+}
+
+header nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header nav .logo h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+
+}
+header nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav .humburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+header nav .small{
+  display: none;
+}
+header nav .humburger div{
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+header nav ul a{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.services{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #591ce6;
+  padding: 5% 10%;
+}
+
+.services .title{
+  width: 100%;
+  align-items: left;
+  font-size: 2.3rem;
+  color: #fff;
+}
+
+
+  .services .all_cards{
+    margin-top: 15PX;
+    width:100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .services .all_cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+.services .all_cards .service-card{
+  background-color: #2a0978;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: 0.5s;
+}
+
+.services .all_cards .service-card h2,
+.services .all_cards .service-card p{
+  color: #eae2e2;
+}
+.services .all_cards .service-card h2{
+  font-size: 1.7rem;
+  font-weight: 600;
+
+}
+
+.services .all_cards .service-card p{
+  font-size: 1.2rem;
+  font-weight: 500;
+
+}
+@media screen and (max-width: 950px) {
+  header{
+    padding: 20px 0%;
+  }
+  header nav{
+    padding: 20px 5%;
+  }
+}
+
+
+@media screen and (max-width: 830px) {
+  header nav .humburger {
+    display: flex;
+  }
+
+  header nav .menu{
+    display: none;
+  }
+  header nav .small{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 10px 15px;
+    background-color:#591ce6;
+  }
+  header nav .small li a{
+    font-size: 15px;
+  }
+  
 }
