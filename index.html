@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mock pack</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://kit.fontawesome.com/221a5218b2.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  
     <header>
       <nav>
         <div class="logo">
@@ -18,7 +19,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="humburger">
@@ -31,7 +32,7 @@
               <li><a href="#">Home</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
       </nav>
@@ -90,5 +91,38 @@
         </div>
       </div>
     </div>
-  </body>
+    
+
+
+
+    <!-- contact section -->
+    <div id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="contact-left">
+                  <h1 class = "sub-title">Contact Us</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i>mockpack@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>0712345678</p>
+                  <div class="social-icons">
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                  
+              </div>
+              <div class="contact-right">
+                  <form>
+                      <input type="text" name = "Name" placeholder="Your Name" required>
+                      <input type="email" name = "Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                      <button type = "submit" class="btn btn2">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>Copyright © Mock Pack</p>
+      </div>
+  </div>
+</body>
 </html>
