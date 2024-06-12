@@ -454,3 +454,145 @@ form .btn2{
     font-size: 30px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+/* Header styles */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #591ce6;
+  position: fixed;
+  z-index: 1000;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+header nav .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav .menu ul a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* About Us page styles */
+.container {
+  width: 100%;
+  padding: 120px 10%;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #591ce6;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about ul li strong {
+  color: #591ce6;
+}
+
+/* Footer styles */
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #591ce6;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+footer .copyright p {
+  color: #fff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 100px 5%;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .about h1 {
+    font-size: 2.5rem;
+  }
+
+  .about p, .about ul li {
+    font-size: 1rem;
+  }
+}
