@@ -13,7 +13,6 @@
         <div class="logo">
           <h1>Mock pack</h1>
         </div>
-        <!-- Me valentin here I have cloned and added some changes -->
         <div>
           <ul class="small">
             <li><a href="#">Home</a></li>
@@ -24,8 +23,8 @@
         </div>
         <div class="humburger">
           <div class="hum1"></div>
-          <div class="hum1"></div>
-          <div class="hum1"></div>
+          <div class="hum2"></div>
+          <div class="hum3"></div>
         </div>
         <div class="menu">
             <ul>
@@ -41,9 +40,7 @@
       <div class="left">
         <h1>Welcome to our stress-free moving experience</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-          assumenda, unde similique provident ipsam iste rem corrupti maiores
-          dolorem autem.
+          At Mock pack, we understand that moving can be a stressful and challenging experience. That's why we are dedicated to providing top-notch moving services that are designed to make your transition as smooth and hassle-free as possible. Our team of experienced professionals is committed to handling your belongings with the utmost care and efficiency.
         </p>
         <div class="button">
           <button class="btn">Get started</button>
@@ -60,33 +57,25 @@
         <div class="service-card">
           <h2>Packing</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            assumenda, unde similique provident ipsam iste rem corrupti maiores
-            dolorem autem.
+            Our professional packing services ensure that all your items are securely packed and protected during transit. We use high-quality materials and techniques to safeguard your belongings, giving you peace of mind throughout the moving process.
           </p>
         </div>
         <div class="service-card">
           <h2>Loading</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            assumenda, unde similique provident ipsam iste rem corrupti maiores
-            dolorem autem.
+            Our skilled team takes care of the heavy lifting for you. With meticulous attention to detail, we load your items onto our moving trucks in an organized and safe manner, optimizing space and ensuring that everything arrives at your new location in perfect condition.
           </p>
         </div>
         <div class="service-card">
           <h2>Transportation</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            assumenda, unde similique provident ipsam iste rem corrupti maiores
-            dolorem autem.
+            We offer reliable and efficient transportation services to get your belongings to your new home or office on time. Our fleet of modern, well-maintained vehicles and experienced drivers ensure that your move is executed seamlessly, no matter the distance.
           </p>
         </div>
         <div class="service-card">
           <h2>Unpacking</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            assumenda, unde similique provident ipsam iste rem corrupti maiores
-            dolorem autem.
+            Once you arrive at your new location, our team is ready to help you settle in quickly. We offer comprehensive unpacking services, carefully placing your items where you want them and taking away all packing materials, so you can start enjoying your new space right away.
           </p>
         </div>
       </div>
@@ -124,5 +113,13 @@
           <p>Copyright © Mock Pack</p>
       </div>
   </div>
+  <script>
+    const humb = document.querySelector(".humburger");
+    const humburgerToDisplay = document.querySelector(".small")
+    humb.addEventListener("click", ()=>{
+      humb.classList.toggle("change");
+      humburgerToDisplay.classList.toggle("show");
+    })
+  </script>
 </body>
 </html>
