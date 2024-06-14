@@ -596,3 +596,109 @@ footer .copyright p {
     font-size: 1rem;
   }
 }
+@media (max-width: 1200px) {
+    .container {
+      padding: 10px 5%;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    .contact-left,
+    .contact-right {
+      flex-basis: 100%;
+      margin-top: 50px;
+    }
+  
+    .contact-left p i {
+      font-size: 20px;
+    }
+  
+    .social-icons a {
+      font-size: 25px;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 16px;
+      padding: 12px;
+    }
+  
+    form .btn2 {
+      padding: 12px 50px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px 3%;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    .contact-left,
+    .contact-right {
+      flex-basis: 100%;
+      margin-top: 30px;
+    }
+  
+    .contact-left p i {
+      font-size: 18px;
+    }
+  
+    .social-icons a {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    form .btn2 {
+      padding: 10px 40px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px 2%;
+    }
+  
+    h1 {
+      font-size: 25px;
+    }
+  
+    .contact-left,
+    .contact-right {
+      flex-basis: 100%;
+      margin-top: 20px;
+    }
+  
+    .contact-left p i {
+      font-size: 16px;
+    }
+  
+    .social-icons a {
+      font-size: 18px;
+      margin-right: 8px;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    form .btn2 {
+      padding: 8px 30px;
+      font-size: 12px;
+    }
+  }
