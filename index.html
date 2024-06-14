@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="https://kit.fontawesome.com/221a5218b2.js" crossorigin="anonymous"></script>
   </head>
-  
+  <body>
     <header>
       <nav>
         <div class="logo">
@@ -17,7 +17,7 @@
           <ul class="small">
             <li><a href="#">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="about_us.html">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -27,13 +27,13 @@
           <div class="hum3"></div>
         </div>
         <div class="menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="about_us.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <div class="container">
@@ -52,7 +52,7 @@
       </div>
     </div>
     <div class="services" id="services">
-      <h1 class="title">Our Services Detailes</h1>
+      <h1 class="title">Our Services Details</h1>
       <div class="all_cards">
         <div class="service-card">
           <h2>Packing</h2>
@@ -80,46 +80,58 @@
         </div>
       </div>
     </div>
-    
-
-
-
-    <!-- contact section -->
+    <div id="about">
+      <div class="container">
+        <div class="about">
+          <h1>About Us</h1>
+          <p>
+            At Mock Pack, we understand the unique needs of each move and tailor our services to meet those needs. Whether you are moving locally or long distance, we have you covered.
+          </p>
+          <ul>
+            <li><strong>Customer Satisfaction:</strong> Our top priority is to exceed your expectations with every move.</li>
+            <li><strong>Reliability:</strong> Count on us to be there every step of the way.</li>
+            <li><strong>Professionalism:</strong> We handle your belongings with the utmost care and respect.</li>
+          </ul>
+          <p>
+            Thank you for choosing Mock Pack for your moving needs. We look forward to making your next move a success!
+          </p>
+        </div>
+      </div>
+    </div>
     <div id="contact">
       <div class="container">
-          <div class="row">
-              <div class="contact-left">
-                  <h1 class = "sub-title">Contact Us</h1>
-                  <p><i class="fa-solid fa-paper-plane"></i>mockpack@gmail.com</p>
-                  <p><i class="fa-solid fa-phone"></i>0712345678</p>
-                  <div class="social-icons">
-                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-                  
-              </div>
-              <div class="contact-right">
-                  <form>
-                      <input type="text" name = "Name" placeholder="Your Name" required>
-                      <input type="email" name = "Email" placeholder="Your Email" required>
-                      <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                      <button type = "submit" class="btn btn2">Submit</button>
-                  </form>
-              </div>
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Us</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>mockpack@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0712345678</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
           </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
       <div class="copyright">
-          <p>Copyright © Mock Pack</p>
+        <p>Copyright © Mock Pack</p>
       </div>
-  </div>
-  <script>
-    const humb = document.querySelector(".humburger");
-    const humburgerToDisplay = document.querySelector(".small")
-    humb.addEventListener("click", ()=>{
-      humb.classList.toggle("change");
-      humburgerToDisplay.classList.toggle("show");
-    })
-  </script>
-</body>
+    </div>
+    <script>
+      const humb = document.querySelector(".humburger");
+      const humburgerToDisplay = document.querySelector(".small")
+      humb.addEventListener("click", ()=>{
+        humb.classList.toggle("change");
+        humburgerToDisplay.classList.toggle("show");
+      })
+    </script>
+  </body>
 </html>
