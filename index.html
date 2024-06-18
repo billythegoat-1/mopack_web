@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mock pack</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="https://kit.fontawesome.com/221a5218b2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/221a5218b2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -40,7 +43,12 @@
       <div class="left">
         <h1>Welcome to our stress-free moving experience</h1>
         <p>
-          At Mock pack, we understand that moving can be a stressful and challenging experience. That's why we are dedicated to providing top-notch moving services that are designed to make your transition as smooth and hassle-free as possible. Our team of experienced professionals is committed to handling your belongings with the utmost care and efficiency.
+          At Mock pack, we understand that moving can be a stressful and
+          challenging experience. That's why we are dedicated to providing
+          top-notch moving services that are designed to make your transition as
+          smooth and hassle-free as possible. Our team of experienced
+          professionals is committed to handling your belongings with the utmost
+          care and efficiency.
         </p>
         <div class="button">
           <button class="btn">Get started</button>
@@ -57,44 +65,78 @@
         <div class="service-card">
           <h2>Packing</h2>
           <p>
-            Our professional packing services ensure that all your items are securely packed and protected during transit. We use high-quality materials and techniques to safeguard your belongings, giving you peace of mind throughout the moving process.
+            Our professional packing services ensure that all your items are
+            securely packed and protected during transit. We use high-quality
+            materials and techniques to safeguard your belongings, giving you
+            peace of mind throughout the moving process.
           </p>
         </div>
         <div class="service-card">
           <h2>Loading</h2>
           <p>
-            Our skilled team takes care of the heavy lifting for you. With meticulous attention to detail, we load your items onto our moving trucks in an organized and safe manner, optimizing space and ensuring that everything arrives at your new location in perfect condition.
+            Our skilled team takes care of the heavy lifting for you. With
+            meticulous attention to detail, we load your items onto our moving
+            trucks in an organized and safe manner, optimizing space and
+            ensuring that everything arrives at your new location in perfect
+            condition.
           </p>
         </div>
         <div class="service-card">
           <h2>Transportation</h2>
           <p>
-            We offer reliable and efficient transportation services to get your belongings to your new home or office on time. Our fleet of modern, well-maintained vehicles and experienced drivers ensure that your move is executed seamlessly, no matter the distance.
+            We offer reliable and efficient transportation services to get your
+            belongings to your new home or office on time. Our fleet of modern,
+            well-maintained vehicles and experienced drivers ensure that your
+            move is executed seamlessly, no matter the distance.
           </p>
         </div>
         <div class="service-card">
           <h2>Unpacking</h2>
           <p>
-            Once you arrive at your new location, our team is ready to help you settle in quickly. We offer comprehensive unpacking services, carefully placing your items where you want them and taking away all packing materials, so you can start enjoying your new space right away.
+            Once you arrive at your new location, our team is ready to help you
+            settle in quickly. We offer comprehensive unpacking services,
+            carefully placing your items where you want them and taking away all
+            packing materials, so you can start enjoying your new space right
+            away.
           </p>
         </div>
       </div>
     </div>
-    <div id="about">
-      <div class="container">
-        <div class="about">
-          <h1>About Us</h1>
-          <p>
-            At Mock Pack, we understand the unique needs of each move and tailor our services to meet those needs. Whether you are moving locally or long distance, we have you covered.
-          </p>
-          <ul>
-            <li><strong>Customer Satisfaction:</strong> Our top priority is to exceed your expectations with every move.</li>
-            <li><strong>Reliability:</strong> Count on us to be there every step of the way.</li>
-            <li><strong>Professionalism:</strong> We handle your belongings with the utmost care and respect.</li>
-          </ul>
-          <p>
-            Thank you for choosing Mock Pack for your moving needs. We look forward to making your next move a success!
-          </p>
+    <div class="about" id="about">
+      <div class="about__inner">
+        <div class="about_section">
+          <div class="left_about_section">
+            <img src="./images/about_section.png" alt="" />
+          </div>
+          <div class="right_about_section">
+            <h1>About Us</h1>
+            <p>
+              At Mopack Moving and Packing Company, we’re not just about moving
+              boxes; we’re about moving lives. Our philosophy is rooted in the
+              belief that each move symbolizes a new chapter, and we’re honored
+              to be part of your story. Our team of skilled professionals is
+              dedicated to delivering a moving experience that is as seamless
+              and stress-free as possible. We treat every item with the same
+              care we would our own, understanding that behind every object
+              there is sentiment and history. Whether it’s the family heirloom
+              or the comforts of your everyday living, we safeguard your
+              possessions with the highest standard of care.
+            </p>
+
+            <p>
+              Our commitment to excellence extends beyond the physical move. We
+              offer a suite of comprehensive services tailored to fit your
+              individual needs, ensuring that from the moment you decide to
+              relocate until the last box is unpacked, you feel supported. Our
+              approach combines traditional values with modern efficiency,
+              resulting in a moving service that is both reliable and
+              refreshingly straightforward. Choose Mopack, where we turn the
+              daunting into the doable, transforming moving challenges into
+              smooth transitions. Let us carry the load and guide you
+              effortlessly to the doorstep of your future.
+            </p>
+            <button>view more</button>
+          </div>
         </div>
       </div>
     </div>
@@ -113,9 +155,18 @@
           </div>
           <div class="contact-right">
             <form>
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
           </div>
@@ -127,11 +178,11 @@
     </div>
     <script>
       const humb = document.querySelector(".humburger");
-      const humburgerToDisplay = document.querySelector(".small")
-      humb.addEventListener("click", ()=>{
+      const humburgerToDisplay = document.querySelector(".small");
+      humb.addEventListener("click", () => {
         humb.classList.toggle("change");
         humburgerToDisplay.classList.toggle("show");
-      })
+      });
     </script>
   </body>
 </html>
